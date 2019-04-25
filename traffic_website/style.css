@@ -1,0 +1,47 @@
+/*GLOBAL ELEMENTS*/
+
+body {
+    background-color: #233237;
+    font-family: Merriweather, serif;
+}
+
+p {color: #eac67a;
+    font-size: 12pt;
+    padding-top: 10px;
+   
+}
+
+h2 {color: #984b43;
+    padding: top;
+}
+
+a {
+    background-color: #233237;
+}
+
+/*TOP NAVBAR ELEMENTS*/
+.navbar-default {
+    font-family: Merriweather, serif;
+    background-color: #233237 ;
+    color: #984b43;
+}
+
+.navbar .navbar-brand{
+    background-color: #233237 !important;
+}
+
+
+/*SIDEBAR ELEMENTS*/
+.nav-item {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+ul {
+    background-color: #233237;
+}
+li {
+    background-color: #233237;
+}
+
+
