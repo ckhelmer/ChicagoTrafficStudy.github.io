@@ -1,0 +1,21 @@
+
+body {
+    font-family: "Merriweather", serif;
+    background-color: :#e8eaea; 
+    background-image: url("Images/CTSBackground.gif");
+    background-repeat: none;
+    background-size: 100%;
+}
+img {
+    max-height: 480px;
+    max-width: 700px;
+    margin: 30px;
+}
+
+h4 {
+    padding-bottom: 10px;
+}
+
+p {
+
+}
