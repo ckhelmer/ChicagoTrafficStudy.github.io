@@ -1,3 +1,15 @@
+/*NAVIGATION*/
+
+.nav-item {
+    padding: 1px 30px;
+
+}
+
+.dropdown-menu {
+    background: #7bdee6
+}
+/*BODY SETTINGS*/
+
 
 body {
     font-family: "Merriweather", serif;
@@ -7,23 +19,15 @@ body {
     background-size: 100%;
     background-attachment: fixed;
 }
-img {
-    max-height: 480px;
-    max-width: 700px;
-    margin: 30px;
-    width: 100%;
-    height: auto; 
+
+h3 {
+    padding-top: 50px;
+    padding-bottom: 12px;
+    font-weight: bold;
 }
 
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-h4 {
-    padding-bottom: 10px;
-}
-.nav-item {
-    padding: 7px 30px;
+.table {
+    margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -31,4 +35,3 @@ h4 {
         background-image: none;
         background-color: #e8eaea;
     }
-}

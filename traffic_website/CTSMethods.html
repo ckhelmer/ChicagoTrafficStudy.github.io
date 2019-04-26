@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Data and Methodology</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alfa+Slab+One|Merriweather" rel="stylesheet">
+      <link rel="stylesheet" href="DataStyle.css">
+    </head>
+
+    <body>
+             <!--NAVBAR-->
+             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Data and Methodology
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="CTSMethods.html">Questions and Methodology</a>
+                                  <a class="dropdown-item" href="CTSDataPage.html">Data and Technologies</a>
+                                </div>
+                              </li>
+                              <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="CTSGrid.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Visualizations
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item" href="CTSVisualA.html">Heatmap</a>
+                                      <a class="dropdown-item" href="CTSVisualB.html">Regions Map</a>
+                                      <a class="dropdown-item" href="CTSVisualC.html">Drunk Driving Map</a>
+                                      <a class="dropdown-item" href="CTSVisualD.html">Accidents: Regional Analysis</a>
+                                      <a class="dropdown-item" href="CTSVisualE.html">Injuries: Regional Analysis</a>
+                                      <a class="dropdown-item" href="CTSVisualF.html">Traffic Cameras: Regional Analysis</a>
+                                    </div>
+                                  </li>
+                              <li class="nav-item">
+                       </ul>
+                    </div>
+                  </nav>
+        
+        <!--CONTAINER FOR SPACING-->
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-7">
+                    <!--DESCRIPTION OF STUDY-->
+                    <h3>Research Questions, Methodology, and Findings</h3>
+                    <p>
+                        In our study of Chicago traffic patterns, we originally set out to discover whether 
+                        traffic cameras had an affect on the number of accidents within a city. We selected 
+                        Chicago as the city we would examine based on the publicly available information it 
+                        provided in its APIs. In an ideal world, we would be able to compare the number of 
+                        accidents prior to traffic camera implementation with the number of accidents afterwards 
+                        to determine if there was a correlation between the amount of traffic cameras and the number of accidents 
+                        in a given area. Unfortunately, this information was not available to us. 
+                        As a result, we focused on discovering a correlation between the number of traffic 
+                        cameras and the amount of accidents from 2016 to March 2019. </p>
+
+                    <p>
+                        To compare traffic cameras with accidents, we 
+                        used a series of <a href = "CTSVisualB.html">regions</a> provided by the city of Chicago. Our datasets provided 
+                        latitude and longitude for each region, each accident, and each camera, and we assigned a numerical
+                        region to each crash and each camera. We could then determine that there was a positive correlation
+                        between traffic cameras and accidents.  
+                    </p>
+                    <p>
+                        We had some concerns that this correlation was due to a kind of reverse causality; there were more cameras in areas 
+                        where traffic accidents were more common, rather than the other way around. In order to assess this, we tried various 
+                        methods of normalizing our data to account for differences in regional traffic flows. One of these methods involved 
+                        not assessing the number of accidents, but the <a href= "CTSVisualE.html">rate</a> of <a href = "CTSVisualD.html">injuries and fatalities</a> 
+                        those accidents produced. Using this method, we were able to determine that the presence of traffic cameras had no correlation
+                        with injury and fatality rate per accident.
+                    </p>
+
+                    <p>
+                        The datasets we used contained a wealth of information not related to our original research question.
+                        I've included some of the more interesting visualizations here as well. One of them shows the <a href = "CTSVisualC.html">regional
+                        prevalence of accidents caused by drunk driving.</a> 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
