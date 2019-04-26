@@ -7,93 +7,63 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-      <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Alfa+Slab+One|Merriweather" rel="stylesheet">
+      <link rel="stylesheet" href="visual.css">
     </head>
 
     <body>
-        <!--NAVBAR ELEMENT-->
-        <nav class="navbar navbar-default">
-        <nav class="navbar navbar-dark bg-dark">
-            <span class="navbar-brand mb-0 h1">Chicago Traffic Safety</span>
-            <!--EMBEDDED DROPDOWN--I MAY CHANGE THIS LATER-->
-            <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown link
-                </a>
-              
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="CTSDataPage.html">Data and Methodology<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CTSGrid.html">Visualizations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CTSVisualA.html">Heatmap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CTSVisualB.html">Traffic Regions Map</a>
+              </li>
+              <li class="nav-item">
+                      <a class="nav-link" href="CTSVisualC.html">Drunk Driving</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="CTSVisualD.html">Accidents By Region</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CTSVisualE.html">Accidents Severity By Region</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CTSVisualF.html">Traffic Camera Distribution</a>
+          </li>
+             </ul>
+          </div>
+        </nav>
+
+          <!--CONTAINER TO SPLIT UP SPACING NICELY-->
+          <div class = "container">
+              <div class = "row">
+                  <div class = "col-md-7">
+                      <img src= "Images/Crash_Heatmap_w_cams_offset.png"/>
+                  </div>
+                  <div class = "col-md-4">
+                      <!--THIS IS EMPTY. FOR NOW.-->
+                  </div>
               </div>
-        </nav>
-        </nav>
-        <!--2ND NAVBAR ELEMENT: SIDEBAR-->
-        
-        <div class="container-fluid h-100">
-            <div class = "float-right">    
-                <div class="row h-100">
-                    <aside class="col-12 p-0 bg-dark">
-                        <nav nav class="navbar navbar-default">
-                            <nav class="navbar navbar-expand navbar-dark bg-dark flex-md-column flex-row align-items-start">
-                            <div class="collapse navbar-collapse">
-                                <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
-                                    <li class="nav-item">
-                                        <a class="nav-link pl-0" href="#">               
-                                            <img src="https://picsum.photos/300/200"/>
-                                        </a>
-                                    </li>
-                                    <li class = "nav-item">
-                                        <a class="nav-link pl-0" href="#">               
-                                            <img src="https://picsum.photos/300/200"/>
-                                        </a> 
-                                    </li>
-                                    <li class = "nav-item">
-                                        <a class="nav-link pl-0" href="#">               
-                                            <img src="https://picsum.photos/300/200"/>
-                                        </a>
-                                    </li>    
-                                </ul>
-                            </div>
-                            </nav>
-                        </nav>
-                    </aside>
-                </div>
-            </div>
-        </div>
-                    
-        <!--CONTAINER FOR THE REST OF THE PAGE-->
-        <div class = "container">
-            <div class = "row">
-                <div class = "col-md-12">
-                    <!--SPACING IS FUN-->
-                    <br>
-                </div>
-            </div> 
-            <div class = "row">
-                <div class = "col-md-8">
-                    <!--PAGE MAIN VISUALIZATION-->
-                    <img src="https://picsum.photos/600/400"/>
-                    
-                </div>
-
-            </div>
-            <div class = "row">
-                <div class = "col-md-8">
-                    <!--PAGE TEXT-->
-                    <h2>REALLY COOL TITLE HERE</h2>
-                    <p>Lorem ipsum dolor sit amet, luptatum delicatissimi in ius, an tale iusto pertinax nam. Eam ornatus docendi et, ea affert patrioque expetendis per, quod euismod accusam et nam. Et ius scripta prompta, enim discere expetendis mel ei. Omnes detracto perpetua quo ut, case solum aeterno ea nam, vis vitae partem ponderum eu. Quo choro accumsan volutpat ne, mei natum veritus invidunt id. Tollit oporteat oportere no sed, soluta viderer nostrum ea eam, graeci lucilius elaboraret vix an.</p>
-                </div>
-
-            </div>
-            <div class = "row">
-                <div class = "col-md-8">
-
-                </div>
-
-            </div>
-        </div>
+              <div class = "row">
+                  <div class = "col-md-7">
+                      <h4>Heatmap with Traffic Cameras Marked</h4>
+                      <p>This map tracks the incidence of accidents in the city of Chicago. During our study, we observed that areas that had more traffic had more accidents. This correlated roughly with traffic levels on a daily basis as well. </p>
+                      <p>There are two types of traffic cameras employed by the city of Chicago: red light cameras and speed cameras. They are marked with different colors in the graphic. In the city of Chicago, speed cameras are found only in areas adjacent to a school or a park, and are intended to decrease the fatality rate of accidents, specifically those involving children.</p>
+                  </div>
+              </div>
+          </div>
     </body>
-</html>    
+</html>
