@@ -12,7 +12,10 @@ img {
     max-width: 700px;
     margin: 30px;
     width: 100%;
-    height: auto; 
+    height: auto;
+    padding: 1px;
+    border: 1px solid #021a40;
+     
 }
 
 .img-fluid {
