@@ -33,3 +33,12 @@ body {
 .card {
     position: fixed;
 }
+
+@media (max-width: 320px) {
+    h3 {
+        padding-top: 100px;
+    }
+    p {
+        padding-top: 10px;
+    }
+}
