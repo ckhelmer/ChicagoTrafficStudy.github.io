@@ -11,7 +11,7 @@
 
 body {
     font-family: "Merriweather", serif;
-    background-color: :#e8eaea; 
+    background-color: #e8eaea; 
     background-image: url("Images/CTSBackground.gif");
     background-repeat: none;
     background-size: 100%;
@@ -33,3 +33,4 @@ h3 {
         background-image: none;
         background-color: #e8eaea;
     }
+}

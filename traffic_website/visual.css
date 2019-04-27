@@ -1,7 +1,7 @@
 
 body {
     font-family: "Merriweather", serif;
-    background-color: :#e8eaea; 
+    background-color: #e8eaea; 
     background-image: url("Images/CTSBackground.gif");
     background-repeat: none;
     background-size: 100%;
@@ -29,9 +29,18 @@ h4 {
     padding: 7px 30px;
 }
 
+@media (max-width: 1200px) {
+    body {
+        background-image: url("Images/CTSBackground-standard.gif");
+        background-size:100%;
+        
+    }
+}
+
 @media (max-width: 768px) {
     body {
         background-image: none;
         background-color: #e8eaea;
     }
 }
+
