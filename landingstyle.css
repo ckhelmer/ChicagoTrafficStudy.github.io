@@ -33,14 +33,3 @@ body {
 .card {
     position: fixed;
 }
-
-#mobile {
-    color : white;
-    font-size: 30px;    
-}
-
-#mobiletext {
-    color: white;
-    font-size: 15px;
-    margin-top: 150px;
-}
